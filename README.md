@@ -12,7 +12,7 @@ The application consists of three frames:
 
 ![](img/screenshot.png)
 
-The application uses an external [MongoDB] https://en.wikipedia.org/wiki/MongoDB) to
+The application uses an external [MongoDB](https://en.wikipedia.org/wiki/MongoDB) to
 store the results. 
 
 # How to run?
@@ -20,9 +20,17 @@ store the results.
 The application can be either run on a local device or an external 
 [Shiny Server](https://www.rstudio.com/products/shiny/shiny-server/).
 
-**Please note that you need an external, separate, database access to 
-store and read the poll data! Database information need be stored in 
-a (YAML)[https://en.wikipedia.org/wiki/YAML] file name `db_access.yml` **
+**Please note**
+
+* You need an external, separate, database access to store and read the poll data! 
+* Your database information need be stored in a [YAML](https://en.wikipedia.org/wiki/YAML) file name `db_access.yml`
+
+Example `db_access.yml`
+```
+collection: "MyPoll"
+database: "my_database"
+url: "my_mongodb_url"
+```
 
 # Licence
 
