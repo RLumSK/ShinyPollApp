@@ -1,22 +1,28 @@
 # ShinyPollApp
 
-This [Shiny](https://shiny.rstudio.com) application was developed to conduct a brief poll on missing 
-features in [R](https://www.r-project.org) with regard do geosciences during a [PICO session](http://meetingorganizer.copernicus.org/EGU2017/session/24971) organised 
-by Michael Dietze, Sebastian Kreutzer and Oliver Korup at the [EGU 2017](http://www.egu2017.eu) 
-in Vienna (Austria). 
+This [Shiny](https://shiny.rstudio.com) application was developed to conduct a brief poll on missing features in [R](https://www.r-project.org) with regard do geosciences during a [PICO session](http://meetingorganizer.copernicus.org/EGU2017/session/24971).
 
-The application uses an external [MongoDB](https://en.wikipedia.org/wiki/MongoDB) to
-store the results. 
+PICO session convener: Michael Dietze, Sebastian Kreutzer and Oliver Korup at the [EGU 2017](http://www.egu2017.eu) in Vienna (Austria). 
+
+The application consists of three frames:
+
+1. An input frame 
+2. A result visualisation frame, here a word clouds showing the primary poll results
+3. A table frame showing the raw results in more detail
 
 ![](img/screenshot.png)
+
+The application uses an external [MongoDB] https://en.wikipedia.org/wiki/MongoDB) to
+store the results. 
 
 # How to run?
 
 The application can be either run on a local device or an external 
 [Shiny Server](https://www.rstudio.com/products/shiny/shiny-server/).
 
-**Please note that you need an external database access to 
-store and read data!**
+**Please note that you need an external, separate, database access to 
+store and read the poll data! Database information need be stored in 
+a (YAML)[https://en.wikipedia.org/wiki/YAML] file name `db_access.yml` **
 
 # Licence
 
